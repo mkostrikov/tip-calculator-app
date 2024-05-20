@@ -30,11 +30,12 @@
 
   &__item:has(input[type="radio"]:checked) {
     background-color: #26c2ae;
+    color: #00474b;
   }
 
   &__item:has(input[type="radio"]:checked) input[type="number"] {
     background-color: #26c2ae;
-    color: var(--white);
+    color: #00474b;
   }
 
   &__item:has(input[type="radio"]:focus-visible) {
