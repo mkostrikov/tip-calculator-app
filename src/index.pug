@@ -17,9 +17,10 @@ html(lang="en")
                 form.form(id="tip-calculator" novalidate)
                     div.form__content
                         div.form__field
-                            label.form__label Bill
+                            label.form__label(for="input-bill") Bill
                             input.input.input--icon.input--bill(
                                 type="number"
+                                id="input-bill"
                                 name="bill"
                                 placeholder="0"
                                 min="0"
@@ -59,9 +60,10 @@ html(lang="en")
                             div.validation-message(id="tip-validation" aria-live="assertive")
                                 span Invalid percentage
                         div.form__field
-                            label.form__label Number of People
+                            label.form__label(for="input-people") Number of People
                             input.input.input--icon.input--person(
                                 type="number"
+                                id="input-people"
                                 name="people"
                                 placeholder="0"
                                 min="1"
