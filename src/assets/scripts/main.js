@@ -1,6 +1,6 @@
 const validationsTipCalculator = {
     bill: (value) => value === '' || (/^\d+(\.\d{1,2})?$/.test(value) && +value > 0),
-    tip: (value) => value === '' || +value >= 1 && +value <= 100,
+    tip: (value) => value === '' || +value >= 1,
     people: (value) => value === '' || Number.isInteger(+value) && +value > 0,
 }
 

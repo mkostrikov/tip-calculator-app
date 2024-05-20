@@ -21,13 +21,12 @@ html(lang="en")
                             input.input.input--icon.input--bill(
                                 type="number"
                                 name="bill"
-                                inputmode="decimal"
                                 placeholder="0"
                                 min="0"
                                 step="any"
                                 aria-describedby="bill-validation"
                             )
-                            div.validation-message(id="bill-validation")
+                            div.validation-message(id="bill-validation" aria-live="assertive")
                                 span Invalid currency amount
                         fieldset.form__fieldset
                             legend.form__label Select Tip %
@@ -47,7 +46,7 @@ html(lang="en")
                                 label.radio-group__item
                                     input(type="radio" name="tip" value="50")
                                     span 50
-                                label.radio-group__item.radio-group__item--bg-transparent
+                                div.radio-group__item.radio-group__item--bg-transparent
                                     input(type="radio" id="radio-hidden" name="tip" value="" checked)
                                     input(
                                         type="number"
@@ -57,7 +56,7 @@ html(lang="en")
                                         max="100"
                                         step="1"
                                     )
-                            div.validation-message(id="tip-validation")
+                            div.validation-message(id="tip-validation" aria-live="assertive")
                                 span Invalid percentage
                         div.form__field
                             label.form__label Number of People
@@ -69,7 +68,7 @@ html(lang="en")
                                 step="1"
                                 aria-describedby="people-validation"
                             )
-                            div.validation-message(id="people-validation")
+                            div.validation-message(id="people-validation" aria-live="assertive")
                                 span Only positive integer
                     footer.form__footer
                         div.form__result
