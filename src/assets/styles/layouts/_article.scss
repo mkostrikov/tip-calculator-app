@@ -1,0 +1,11 @@
+.article {
+  display: grid;
+  justify-content: center;
+
+  &__header {
+    padding: 5rem 0 4rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+}

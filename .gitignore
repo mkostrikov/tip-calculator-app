@@ -1,0 +1,9 @@
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+.idea/
+node_modules/
+design/
+dist/

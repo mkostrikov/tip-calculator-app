@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  justify-content: center;
+  background-color: #c5e4e7;
+  min-block-size: 100dvh;
+
+  @media (min-width: 1000px) {
+    & {
+      place-items: center;
+    }
+  }
+}

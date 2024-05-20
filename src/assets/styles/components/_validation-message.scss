@@ -1,0 +1,13 @@
+.validation-message {
+  font-size: 1.6rem;
+  color: #e17457;
+  block-size: 2.4rem;
+
+  & > span {
+    display: none;
+  }
+
+  &--display > span {
+    display: inline-block;
+  }
+}
